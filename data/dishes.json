@@ -1,11 +1,11 @@
 [
     {
-        "name": "EnglishBreakfast",
+        "name": "English Breakfast",
         "image": "/images/general/dishes/breakfast/EnglishBreakfast.webp",
         "id": "englishBreakfast"
     },
     {
-        "name": "FrenchToast",
+        "name": "French Toast",
         "image": "/images/general/dishes/breakfast/FrenchToast.webp",
         "id": "frenchToast"
     },
@@ -20,17 +20,17 @@
         "id": "waffle"
     },
     {
-        "name": "Chinese_Sweet_Sour",
+        "name": "Chinese Sweet Sour",
         "image": "/images/general/dishes/deep-fried/Chinese_Sweet_Sour.webp",
         "id": "chinese_Sweet_Sour"
     },
     {
-        "name": "KoreanFriedChicken",
+        "name": "Korean Fried Chicken",
         "image": "/images/general/dishes/deep-fried/KoreanFriedChicken.webp",
         "id": "koreanFriedChicken"
     },
     {
-        "name": "Tempura_Shrimp",
+        "name": "Tempura Shrimp",
         "image": "/images/general/dishes/deep-fried/Tempura_Shrimp.webp",
         "id": "tempura_Shrimp"
     },
@@ -40,7 +40,7 @@
         "id": "curry"
     },
     {
-        "name": "DimSum",
+        "name": "Dim Sum",
         "image": "/images/general/dishes/dough/DimSum.webp",
         "id": "dimSum"
     },
@@ -55,7 +55,7 @@
         "id": "taco"
     },
     {
-        "name": "KoreanBBQ",
+        "name": "Korean BBQ",
         "image": "/images/general/dishes/grilled/KoreanBBQ.webp",
         "id": "koreanBBQ"
     },
@@ -75,17 +75,17 @@
         "id": "banhMi"
     },
     {
-        "name": "BurgerFries",
+        "name": "Burger Fries",
         "image": "/images/general/dishes/handheld/BurgerFries.webp",
         "id": "burgerFries"
     },
     {
-        "name": "BunCha",
+        "name": "Bun Cha",
         "image": "/images/general/dishes/noodle_Soup/BunCha.webp",
         "id": "bunCha"
     },
     {
-        "name": "ChineseNoodle",
+        "name": "Chinese Noodle",
         "image": "/images/general/dishes/noodle_Soup/ChineseNoodle.webp",
         "id": "chineseNoodle"
     },
@@ -110,12 +110,12 @@
         "id": "biryani"
     },
     {
-        "name": "ComTam",
+        "name": "Com Tam",
         "image": "/images/general/dishes/rice/ComTam.webp",
         "id": "comTam"
     },
     {
-        "name": "FriedRice",
+        "name": "Fried Rice",
         "image": "/images/general/dishes/rice/FriedRice.webp",
         "id": "friedRice"
     },
