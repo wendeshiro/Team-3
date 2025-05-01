@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Darumadrop+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style-random.css">
+    <title>What Should I Eat?! - blind box</title>
+</head>
+
+<body>
+    <div class="top-buttons">
+        <a href="index.html" class="button button__home">
+            <img src="./images/general/home.png" class="icon" alt="home icon" />
+            Main Page
+        </a>
+
+        <button class="button button__reset" id="resetBtn">
+            <img src="images/random/reset.svg" class="icon" alt="reset icon" />
+            Reset
+        </button>
+    </div>
+
+    <h1 class="heading">Pick one!</h1>
+
+    <div class="boxes">
+        <img src="./images/random/cloche.webp" class="blind-box" alt="blind box">
+        <img src="./images/random/cloche.webp" class="blind-box" alt="blind box">
+        <img src="./images/random/cloche.webp" class="blind-box" alt="blind box">
+        <img src="./images/random/cloche.webp" class="blind-box" alt="blind box">
+        <img src="./images/random/cloche.webp" class="blind-box" alt="blind box">
+        <img src="./images/random/cloche.webp" class="blind-box" alt="blind box">
+        <img src="./images/random/cloche.webp" class="blind-box" alt="blind box">
+        <img src="./images/random/cloche.webp" class="blind-box" alt="blind box">
+        <img src="./images/random/cloche.webp" class="blind-box" alt="blind box">
+        <img src="./images/random/cloche.webp" class="blind-box" alt="blind box">
+        <img src="./images/random/cloche.webp" class="blind-box" alt="blind box">
+        <img src="./images/random/cloche.webp" class="blind-box" alt="blind box">
+    </div>
+
+    <!-- animation overlay -->
+    <div id="reveal-animation" class="hidden">
+        <img src="./images/random/cloche-lid.png" id="lid" />
+        <img src="./images/random/cloche-plate.png" id="plate" />
+    </div>
+
+    <!-- dish display -->
+    <div id="dish-display" class="hidden">
+        <h2 id="dish-name">You got...</h2>
+        <img id="dish-image" src="" />
+    </div>
+
+</body>
+
+</html>
