@@ -1,0 +1,127 @@
+[
+    {
+        "name": "EnglishBreakfast",
+        "image": "/images/general/dishes/breakfast/EnglishBreakfast.webp",
+        "id": "englishBreakfast"
+    },
+    {
+        "name": "FrenchToast",
+        "image": "/images/general/dishes/breakfast/FrenchToast.webp",
+        "id": "frenchToast"
+    },
+    {
+        "name": "Pancake",
+        "image": "/images/general/dishes/breakfast/Pancake.webp",
+        "id": "pancake"
+    },
+    {
+        "name": "Waffle",
+        "image": "/images/general/dishes/breakfast/Waffle.webp",
+        "id": "waffle"
+    },
+    {
+        "name": "Chinese_Sweet_Sour",
+        "image": "/images/general/dishes/deep-fried/Chinese_Sweet_Sour.webp",
+        "id": "chinese_Sweet_Sour"
+    },
+    {
+        "name": "KoreanFriedChicken",
+        "image": "/images/general/dishes/deep-fried/KoreanFriedChicken.webp",
+        "id": "koreanFriedChicken"
+    },
+    {
+        "name": "Tempura_Shrimp",
+        "image": "/images/general/dishes/deep-fried/Tempura_Shrimp.webp",
+        "id": "tempura_Shrimp"
+    },
+    {
+        "name": "Curry",
+        "image": "/images/general/dishes/dough/Curry.webp",
+        "id": "curry"
+    },
+    {
+        "name": "DimSum",
+        "image": "/images/general/dishes/dough/DimSum.webp",
+        "id": "dimSum"
+    },
+    {
+        "name": "Pizza",
+        "image": "/images/general/dishes/dough/Pizza.webp",
+        "id": "pizza"
+    },
+    {
+        "name": "Taco",
+        "image": "/images/general/dishes/dough/Taco.webp",
+        "id": "taco"
+    },
+    {
+        "name": "KoreanBBQ",
+        "image": "/images/general/dishes/grilled/KoreanBBQ.webp",
+        "id": "koreanBBQ"
+    },
+    {
+        "name": "Okonomiyaki",
+        "image": "/images/general/dishes/grilled/Okonomiyaki.webp",
+        "id": "okonomiyaki"
+    },
+    {
+        "name": "Steak",
+        "image": "/images/general/dishes/grilled/Steak.webp",
+        "id": "steak"
+    },
+    {
+        "name": "BanhMi",
+        "image": "/images/general/dishes/handheld/BanhMi.webp",
+        "id": "banhMi"
+    },
+    {
+        "name": "BurgerFries",
+        "image": "/images/general/dishes/handheld/BurgerFries.webp",
+        "id": "burgerFries"
+    },
+    {
+        "name": "BunCha",
+        "image": "/images/general/dishes/noodle_Soup/BunCha.webp",
+        "id": "bunCha"
+    },
+    {
+        "name": "ChineseNoodle",
+        "image": "/images/general/dishes/noodle_Soup/ChineseNoodle.webp",
+        "id": "chineseNoodle"
+    },
+    {
+        "name": "Pasta",
+        "image": "/images/general/dishes/noodle_Soup/Pasta.webp",
+        "id": "pasta"
+    },
+    {
+        "name": "Pho",
+        "image": "/images/general/dishes/noodle_Soup/Pho.webp",
+        "id": "pho"
+    },
+    {
+        "name": "Ramen",
+        "image": "/images/general/dishes/noodle_Soup/Ramen.webp",
+        "id": "ramen"
+    },
+    {
+        "name": "Biryani",
+        "image": "/images/general/dishes/rice/Biryani.webp",
+        "id": "biryani"
+    },
+    {
+        "name": "ComTam",
+        "image": "/images/general/dishes/rice/ComTam.webp",
+        "id": "comTam"
+    },
+    {
+        "name": "FriedRice",
+        "image": "/images/general/dishes/rice/FriedRice.webp",
+        "id": "friedRice"
+    },
+    {
+        "name": "Sushi",
+        "image": "/images/general/dishes/rice/Sushi.webp",
+        "id": "sushi"
+    }
+]
