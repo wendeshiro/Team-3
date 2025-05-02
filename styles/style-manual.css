@@ -1,0 +1,122 @@
+body {
+  background-color: #fef7e3;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Top buttons */
+.top-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  margin-top: 20px;
+}
+
+/* Meal selection buttons */
+.meal-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  gap: 200px;
+  margin-top: 20px;
+}
+
+.meal-types {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  gap: 200px;
+  margin-top: 20px;
+}
+
+.meal-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  gap: 200px;
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  font-family: "Afacad", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.button__home {
+  background-color: #f7d663;
+  color: #000;
+}
+
+.button__bkfast {
+  font-family: "Darumadrop One", sans-serif;
+  background-color: #4aa152;
+  color: #ffffff;
+}
+
+.button__regular {
+  font-family: "Darumadrop One", sans-serif;
+  background-color: #f7d663;
+  color: #000;
+}
+
+.button__sweet {
+  font-family: "Darumadrop One", sans-serif;
+  background-color: #f09538;
+  color: #ffffff;
+}
+
+.button__savory {
+  font-family: "Darumadrop One", sans-serif;
+  background-color: #bf2e29;
+  color: #ffffff;
+}
+
+/* .button__reset {
+    background-color: #173BB5;
+    color: #fff;
+} */
+
+.button:hover {
+  opacity: 0.7;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+/* Heading */
+.heading {
+  font-family: "Darumadrop One", sans-serif;
+  font-weight: bold;
+  font-size: 96px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+/* Subheading */
+.subheading {
+  font-family: "Darumadrop One", sans-serif;
+  font-weight: bold;
+  font-size: 64px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}

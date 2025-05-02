@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Darumadrop+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/style-manual.css" />
+    <title>What Should I Eat?! - manual</title>
+  </head>
+
+  <body>
+    <div class="top-buttons">
+      <a href="index.html" class="button button__home">
+        <img src="/images/general/home.png" class="icon" alt="home icon" />
+        Main Page
+      </a>
+
+      <!-- <button class="button button__reset" id="resetBtn">
+            <img src="/images/random/reset.svg" class="icon" alt="reset icon" />
+            Reset
+        </button> -->
+    </div>
+
+    <h1 class="heading">What are you craving for?</h1>
+    <h2 class="subheading">Choose a meal</h2>
+    <div class="meal-buttons">
+      <input
+        type="button"
+        class="button button__bkfast"
+        value="Breakfast Menu"
+        onclick="handleMealTypesContainerClick()"
+      />
+      <input
+        type="button"
+        class="button button__regular"
+        value="Regular Menu"
+        onclick="{}"
+      />
+    </div>
+    <div class="meal-types"></div>
+    <div class="meal-options"></div>
+
+    <script src="/scripts/script-manual.js" defer></script>
+  </body>
+</html>
