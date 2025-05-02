@@ -35,6 +35,12 @@ body {
 }
 
 .meal-options {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.meal-items {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,7 +55,7 @@ body {
   gap: 15px;
   font-family: "Afacad", sans-serif;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 24px;
   padding: 15px 30px;
   border: none;
   border-radius: 50px;
@@ -91,6 +97,15 @@ body {
   color: #ffffff;
 }
 
+.button-container {
+  display: flex;
+  gap: 10px; /* Adds space between buttons */
+  margin-top: 10px; /* Adds space below the header */
+}
+
+.inserting-div {
+  display: block;
+}
 /* .button__reset {
     background-color: #173BB5;
     color: #fff;
@@ -109,9 +124,9 @@ body {
 .heading {
   font-family: "Darumadrop One", sans-serif;
   font-weight: bold;
-  font-size: 96px;
+  font-size: 64px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-top: 0px;
 }
 
@@ -119,8 +134,8 @@ body {
 .subheading {
   font-family: "Darumadrop One", sans-serif;
   font-weight: bold;
-  font-size: 64px;
+  font-size: 36px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-top: 0px;
 }
