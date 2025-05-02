@@ -55,7 +55,7 @@ closeOverlayBtn.addEventListener("click", () => {
 // More info button
 moreInfoBtn.addEventListener("click", () => {
     if (selectedDish) {
-        // Navigate to details page
-        window.location.href = `/dish-details/${selectedDish.id}.html`;
+        // Navigate to the details page with the dish ID as a query parameter
+        window.location.href = `./dish-details.html?id=${selectedDish.id}`;
     }
 });
