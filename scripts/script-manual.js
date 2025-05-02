@@ -1,29 +1,29 @@
-// Assuming the button is already in your HTML and has the class "meal-types"
-const mealTypes = document.querySelector(".meal-types");
+// BREAKFAST BUTTON INSERTION SECTION
 
-mealTypes.addEventListener("click", handleMealTypesContainerClick);
-// Function to handle the button click
+// Class selectors
+const mealTypesContainer = document.querySelector(".meal-types");
+const breakfastButton = document.querySelector(".button.button__bkfast"); // Fixed selector with dot
 
 // Function to create "savory" and "sweet" breakfast option buttons
 function createBkfastType(text, className) {
   const button = document.createElement("input");
   button.type = "button";
   button.value = text;
-  button.className = `button ${className}`; // Add the class
+  button.className = className; // Class is already formatted in the parameter
   return button;
 }
 
-function handleMealTypesContainerClick() {
-  // Add the event listener to the "Breakfast Menu" button
-  // Create the "Sweet" button
-  const sweetButton = createBkfastType("Sweet", "button button__sweet"); // Add specific class
-  // Create the "Savory" button
-  const savoryButton = createBkfastType("Savory", "button button__savory"); // Add specific class
+// Make this function available for the HTML onclick attribute
+function handleBreakfastClick() {
+  // Create the "Sweet" and "Savory" buttons
+  const sweetButton = createBkfastType("Sweet", "button button__sweet");
+  const savoryButton = createBkfastType("Savory", "button button__savory");
 
-  // Append the buttons to the DOM (e.g., after the breakfast button)
-  mealTypes.appendChild(sweetButton, mealTypes);
-  mealTypes.appendChild(savoryButton, sweetButton); // Insert after sweet
+  // Append the buttons to the DOM
+  mealTypesContainer.appendChild(sweetButton);
+  mealTypesContainer.appendChild(savoryButton);
 
-  // Remove the event listener to prevent multiple button creations on subsequent clicks.
-  mealTypes.removeEventListener("click", handleMealTypesContainerClick);
+  // Since we're using onclick in HTML, no need to add/remove event listeners
+  // If we still want to prevent multiple clicks, we could disable the button:
+  breakfastButton.disabled = true;
 }
