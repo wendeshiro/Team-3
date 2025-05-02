@@ -69,6 +69,10 @@ body {
   color: #ffffff;
 }
 
+.button__bkfast:disabled {
+  background-color: #87db8f;
+}
+
 .button__regular {
   font-family: "Darumadrop One", sans-serif;
   background-color: #f7d663;
