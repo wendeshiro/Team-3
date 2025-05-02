@@ -26,8 +26,9 @@ fetch("/data/dishes.json")
 function bindBlindBoxEvents() {
     blindBoxes.forEach((box, index) => {
         box.addEventListener("click", () => {
-            // Get a random dish or use the index to match
-            selectedDish = dishes[index % dishes.length];
+            // Get a random dish
+            const randomIndex = Math.floor(Math.random() * dishes.length);
+            selectedDish = dishes[randomIndex];
 
             // Set the dish info
             dishImage.src = selectedDish.image;
