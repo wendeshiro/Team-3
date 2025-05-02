@@ -73,7 +73,7 @@ body {
 }
 
 .blind-box {
-    width: 180px;
+    width: 155px;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
