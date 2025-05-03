@@ -64,3 +64,12 @@ moreInfoBtn.addEventListener("click", () => {
         window.location.href = `./dish-details.html?id=${selectedDish.id}`;
     }
 });
+
+// Back to previous page for "Change Category" button
+const backButton = document.querySelector(".button__back");
+if (backButton) {
+    backButton.addEventListener("click", (event) => {
+        event.preventDefault(); // Prevent default link behavior like refreshing the page
+        history.back(); // Navigate to the previous page
+    });
+}
