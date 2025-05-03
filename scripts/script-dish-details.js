@@ -1,6 +1,6 @@
 // Fetch the dish details from the JSON file and update the page content
 document.addEventListener("DOMContentLoaded", () => {
-    // Add event listener to the "Pick Again" button
+    // Back to previous page for "Pick Again" button
     const backButton = document.querySelector(".button__back");
     if (backButton) {
         backButton.addEventListener("click", (event) => {

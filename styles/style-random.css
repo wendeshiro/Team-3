@@ -35,6 +35,11 @@ body {
     color: #000;
 }
 
+.button__back {
+    background-color: #173BB5;
+    color: #fff;
+}
+
 .button:hover {
     opacity: 0.7;
 }
