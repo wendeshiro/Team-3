@@ -1,5 +1,6 @@
-// Add event listener to the "Pick Again" button
+// Fetch the dish details from the JSON file and update the page content
 document.addEventListener("DOMContentLoaded", () => {
+    // Add event listener to the "Pick Again" button
     const backButton = document.querySelector(".button__back");
     if (backButton) {
         backButton.addEventListener("click", (event) => {
@@ -7,9 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
             history.back(); // Navigate to the previous page
         });
     }
-});
 
-document.addEventListener("DOMContentLoaded", () => {
     // Get the dish ID from the URL
     const urlParams = new URLSearchParams(window.location.search);
     const dishId = urlParams.get("id");
@@ -20,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Fetch the dishes data
-    fetch("/data/dishes.json")
+    fetch("./data/dishes.json")
         .then((res) => {
             if (!res.ok) throw new Error("Failed to load dishes.json");
             return res.json();

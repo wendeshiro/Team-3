@@ -9,7 +9,7 @@ const moreInfoBtn = document.getElementById("moreInfoBtn");
 let dishes = [];
 let selectedDish = null;
 
-fetch("/data/dishes.json")
+fetch("./data/dishes.json")
     .then((res) => {
         if (!res.ok) throw new Error("Failed to load dishes.json");
         return res.json();
@@ -24,7 +24,7 @@ fetch("/data/dishes.json")
 
 // Add click event to blind boxes
 function bindBlindBoxEvents() {
-    blindBoxes.forEach((box, index) => {
+    blindBoxes.forEach((box) => {
         box.addEventListener("click", () => {
             // Get a random dish
             const randomIndex = Math.floor(Math.random() * dishes.length);
