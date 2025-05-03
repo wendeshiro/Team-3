@@ -35,11 +35,6 @@ body {
     color: #000;
 }
 
-/* .button__reset {
-    background-color: #173BB5;
-    color: #fff;
-} */
-
 .button:hover {
     opacity: 0.7;
 }

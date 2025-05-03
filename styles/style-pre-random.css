@@ -1,0 +1,113 @@
+body {
+    background-color: #fef7e3;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Top buttons */
+.top-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    font-family: "Afacad", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.button__home {
+    background-color: #F7D663;
+    color: #000;
+}
+
+.button:hover,
+.meal__btn:hover {
+    opacity: 0.7;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+/* Heading */
+.heading {
+    font-family: "Darumadrop One", sans-serif;
+    font-weight: bold;
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+/* Subheading */
+.subheading {
+    font-family: "Darumadrop One", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+/* Meal buttons */
+.meal-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 30px;
+    gap: 100px;
+    margin-top: 30px;
+}
+
+.meal__btn {
+    font-family: "Darumadrop One", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    padding: 9px 50px 15px 50px;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.meal__btn--all {
+    background-color: #232323;
+    color: #FDF8F2;
+}
+
+.meal__btn--bfast {
+    background-color: #4AA152;
+    color: #FDF8F2;
+}
+
+.meal__btn--main {
+    background-color: #F7D663;
+    color: #232323;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

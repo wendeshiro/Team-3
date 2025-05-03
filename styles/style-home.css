@@ -3,7 +3,6 @@ body {
     padding: 0;
     background-color: #fef7e3;
     overflow: hidden;
-    /* position: relative; */
     font-family: "Darumadrop One", sans-serif;
     /* Flexbox for centering */
     display: flex;
