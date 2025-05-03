@@ -9,13 +9,18 @@ const moreInfoBtn = document.getElementById("moreInfoBtn");
 let dishes = [];
 let selectedDish = null;
 
+// Get the category from the URL
+const urlParams = new URLSearchParams(window.location.search);
+const category = urlParams.get("category") || "all"; // Default to "all"
+
 fetch("./data/dishes.json")
     .then((res) => {
         if (!res.ok) throw new Error("Failed to load dishes.json");
         return res.json();
     })
     .then((data) => {
-        dishes = data;
+        // Filter dishes based on the category
+        dishes = category === "all" ? data : data.filter((dish) => dish.category === category);
         bindBlindBoxEvents();
     })
     .catch((err) => {
