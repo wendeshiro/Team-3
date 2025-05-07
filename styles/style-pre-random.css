@@ -72,7 +72,8 @@ body {
     align-items: center;
     flex-wrap: wrap;
     padding: 10px 30px;
-    gap: 100px;
+    column-gap: 45px;
+    row-gap: 35px;
     margin-top: 30px;
 }
 
@@ -103,6 +104,36 @@ body {
     color: #232323;
 }
 
+.meal__btn--deep-fried {
+    background-color: #BF2E29;
+    color: #FDF8F2;
+}
+
+.meal__btn--dough {
+    background-color: #173BB5;
+    color: #FDF8F2;
+}
+
+.meal__btn--grilled {
+    background-color: #F09538;
+    color: #FDF8F2;
+}
+
+.meal__btn--handheld {
+    background-color: #639ef7;
+    color: #FDF8F2;
+}
+
+.meal__btn--noodle-soup {
+    background-color: #7c63f7;
+    color: #FDF8F2;
+}
+
+.meal__btn--rice {
+    background-color: #f76377;
+    color: #FDF8F2;
+}
+
 .content {
     position: absolute;
     width: 100%;
@@ -110,4 +141,14 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.mode-hint {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    font-size: 14px;
+    color: #bcaa74;
+    pointer-events: none;
+    z-index: 1000;
 }

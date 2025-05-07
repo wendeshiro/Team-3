@@ -12,6 +12,7 @@ let selectedDish = null;
 // Get the category from the URL
 const urlParams = new URLSearchParams(window.location.search);
 const category = urlParams.get("category") || "all"; // Default to "all"
+const subCategory = urlParams.get("subCategory"); // Get subCategory
 
 fetch("./data/dishes.json")
     .then((res) => {
@@ -19,8 +20,14 @@ fetch("./data/dishes.json")
         return res.json();
     })
     .then((data) => {
-        // Filter dishes based on the category
-        dishes = category === "all" ? data : data.filter((dish) => dish.category === category);
+        // Filter dishes based on category or subCategory
+        if (subCategory) {
+            dishes = data.filter((dish) => dish.subCategory === subCategory);
+        } else if (category !== "all") {
+            dishes = data.filter((dish) => dish.category === category);
+        } else {
+            dishes = data; // Show all dishes
+        }
         bindBlindBoxEvents();
     })
     .catch((err) => {
