@@ -3,7 +3,7 @@
 Our project is a web app that helps users decide pick something to eat when they don’t know what are they craving for.
 
 ## How to Run Locally
-### 1. Click the green “Code” button, then select “Download ZIP”.
+### 1. Click the “Code” button, then select “Download ZIP”.
 
 ### 2. After unzipping the ZIP file, open the folder with Visual Studio Code.
 
