@@ -1,164 +1,202 @@
 [
   {
     "name": "English Breakfast",
-    "type": "savory",
     "image": "/images/general/dishes/breakfast/EnglishBreakfast.webp",
-    "id": "englishBreakfast"
-  },
-  {
-    "name": "Benny",
-    "type": "savory",
-    "image": "/images/general/dishes/breakfast/EnglishBreakfast.webp",
-    "id": "benny"
-  },
-  {
-    "name": "Sandwich",
-    "type": "savory",
-    "image": "/images/general/dishes/breakfast/EnglishBreakfast.webp",
-    "id": "sandwich"
+    "id": "englishBreakfast",
+    "category": "breakfast",
+    "subCategory": "breakfast",
+    "desc": "English Breakfast is a big and hearty meal that people in England like to eat in the morning. It usually includes eggs, sausages, bacon, baked beans, grilled tomatoes, toast, and sometimes mushrooms or hash browns. It’s a filling meal that keeps you full for a long time."
   },
   {
     "name": "French Toast",
-    "type": "sweet",
     "image": "/images/general/dishes/breakfast/FrenchToast.webp",
-    "id": "frenchToast"
+    "id": "frenchToast",
+    "category": "breakfast",
+    "subCategory": "breakfast",
+    "desc": "French toast is made by soaking bread in a mix of eggs and milk, then pan-frying it to golden perfection. Often topped with syrup, fruits, or powdered sugar, it’s sweet and indulgent. A warm and cozy choice for breakfast or brunch."
   },
   {
     "name": "Pancake",
-    "type": "sweet",
     "image": "/images/general/dishes/breakfast/Pancake.webp",
-    "id": "pancake"
+    "id": "pancake",
+    "category": "breakfast",
+    "subCategory": "breakfast",
+    "desc": "A pancake is a flat, round cake made from a batter that typically consists of flour, eggs, milk, and a leavening agent like baking powder. The batter is poured onto a hot surface, such as a griddle or frying pan, and cooked until golden brown on both sides."
   },
   {
     "name": "Waffle",
-    "type": "sweet",
     "image": "/images/general/dishes/breakfast/Waffle.webp",
-    "id": "waffle"
+    "id": "waffle",
+    "category": "breakfast",
+    "subCategory": "breakfast",
+    "desc": "The batter-based flat cake known as a waffle is a Belgian culinary specialty. The basic ingredients are the same (flour, milk, eggs, and a pinch of salt), but may include yeast, caramelized sugar, leavening, and toppings."
   },
   {
     "name": "Chinese Sweet Sour",
-    "type": "deep-fried",
     "image": "/images/general/dishes/deep-fried/Chinese_Sweet_Sour.webp",
-    "id": "chinese_sweet_sour"
+    "id": "chineseSweetSour",
+    "category": "main-dish",
+    "subCategory": "deep-fried",
+    "desc": "Sweet and sour pork is a popular Chinese dish featuring crispy pieces of pork coated in a tangy, sweet sauce made from vinegar, sugar, and ketchup. It's often paired with vegetables like bell peppers and onions for added flavor and texture."
   },
   {
     "name": "Korean Fried Chicken",
-    "type": "deep-fried",
     "image": "/images/general/dishes/deep-fried/KoreanFriedChicken.webp",
-    "id": "koreanfriedchicken"
+    "id": "koreanFriedChicken",
+    "category": "main-dish",
+    "subCategory": "deep-fried",
+    "desc": "Korean fried chicken is known for its crispy double-fried skin and bold sauces. It can be sweet, spicy, or soy-garlic flavored and is often served with pickled radish. Crispy, juicy, and seriously addictive."
   },
   {
     "name": "Tempura Shrimp",
-    "type": "deep-fried",
     "image": "/images/general/dishes/deep-fried/Tempura_Shrimp.webp",
-    "id": "tempura_shrimp"
+    "id": "tempuraShrimp",
+    "category": "main-dish",
+    "subCategory": "deep-fried",
+    "desc": "Tempura Shrimp is a Japanese dish made by dipping shrimp into a light batter and frying it until it’s golden and crispy. The batter is very thin and airy, so the shrimp stays light and crunchy. Tempura Shrimp is tasty, not too heavy, and loved by people of all ages."
   },
   {
     "name": "Curry",
-    "type": "dough",
     "image": "/images/general/dishes/dough/Curry.webp",
-    "id": "curry"
+    "id": "curry",
+    "category": "main-dish",
+    "subCategory": "dough",
+    "desc": "Indian Curry with Naan is a popular Indian dish consisting of flavorful curry made with various meats or vegetables, served with naan, a soft, leavened flatbread. It's a comforting and aromatic meal commonly enjoyed in Indian cuisine."
   },
   {
     "name": "Dim Sum",
-    "type": "dough",
     "image": "/images/general/dishes/dough/DimSum.webp",
-    "id": "dimsum"
+    "id": "dimSum",
+    "category": "main-dish",
+    "subCategory": "dough",
+    "desc": "Dim sum is a variety of bite-sized Chinese dishes like dumplings, buns, and rolls served with tea. It’s meant for sharing and enjoyed in a relaxed, social setting. Delicate, diverse, and full of flavor."
   },
   {
     "name": "Pizza",
-    "type": "dough",
     "image": "/images/general/dishes/dough/Pizza.webp",
-    "id": "pizza"
+    "id": "pizza",
+    "category": "main-dish",
+    "subCategory": "dough",
+    "desc": "Pizza is an Italian dish with a baked crust topped with tomato sauce, cheese, and various toppings. From classic Margherita to pepperoni or veggie-loaded, the options are endless. It’s fun, cheesy, and always a hit at gatherings or solo meals."
   },
   {
     "name": "Taco",
-    "type": "dough",
     "image": "/images/general/dishes/dough/Taco.webp",
-    "id": "taco"
+    "id": "taco",
+    "category": "main-dish",
+    "subCategory": "dough",
+    "desc": "Tacos are soft or crispy tortillas filled with meat, cheese, veggies, and salsa. They’re quick to eat, easy to customize, and full of flavor. Tasty, colorful, and perfect for casual meals."
   },
   {
     "name": "Korean BBQ",
-    "type": "grilled",
     "image": "/images/general/dishes/grilled/KoreanBBQ.webp",
-    "id": "koreanbbq"
+    "id": "koreanBBQ",
+    "category": "main-dish",
+    "subCategory": "grilled",
+    "desc": "Korean BBQ is a hands-on dining experience where you grill marinated meats at the table. Wrap them in lettuce with garlic, sauces, and rice for the perfect bite. Fun, flavorful, and best enjoyed with friends."
   },
   {
     "name": "Okonomiyaki",
-    "type": "grilled",
     "image": "/images/general/dishes/grilled/Okonomiyaki.webp",
-    "id": "okonomiyaki"
+    "id": "okonomiyaki",
+    "category": "main-dish",
+    "subCategory": "grilled",
+    "desc": "Okonomiyaki is a savory Japanese pancake with cabbage, meats, or seafood mixed into the batter. It’s cooked on a griddle and topped with tangy sauce, mayo, and bonito flakes. Crispy, hearty, and fun to eat."
   },
   {
     "name": "Steak",
-    "type": "grilled",
     "image": "/images/general/dishes/grilled/Steak.webp",
-    "id": "steak"
+    "id": "steak",
+    "category": "main-dish",
+    "subCategory": "grilled",
+    "desc": "Steak is a grilled or seared cut of beef, cooked to your preferred doneness. It’s often served with sides like mashed potatoes, vegetables, or sauce. Savory, tender, and perfect for a special dinner."
   },
   {
-    "name": "BanhMi",
-    "type": "handheld",
+    "name": "Banh Mi",
     "image": "/images/general/dishes/handheld/BanhMi.webp",
-    "id": "banhmi"
+    "id": "banhMi",
+    "category": "main-dish",
+    "subCategory": "handheld",
+    "desc": "Banh mi is a Vietnamese sandwich served on a crispy baguette with pickled vegetables, meats, and fresh herbs. It blends French and Vietnamese influences for a bold, tangy flavor. Crispy, savory, and bursting with freshness."
   },
   {
     "name": "Burger Fries",
-    "type": "handheld",
     "image": "/images/general/dishes/handheld/BurgerFries.webp",
-    "id": "burgerfries"
+    "id": "burgerFries",
+    "category": "main-dish",
+    "subCategory": "handheld",
+    "desc": "Burger with fries is a meal with a beef meat patty with a burger bun. and crispy potato sticks. The burger has a bun, meat, and toppings like cheese and lettuce. The fries are salty and crunchy. People love eating them together."
   },
   {
     "name": "Bun Cha",
-    "type": "noodle & soup",
     "image": "/images/general/dishes/noodle_Soup/BunCha.webp",
-    "id": "buncha"
+    "id": "bunCha",
+    "category": "main-dish",
+    "subCategory": "noodle-soup",
+    "desc": "Bún Chả is a Vietnamese dish made with grilled pork pieces and white rice noodles. The meat is served in a sweet and sour sauce that tastes like a mix of lemon, sugar, and fish. You eat it with the noodles, fresh vegetables like lettuce and herbs, and sometimes dip everything into the sauce."
   },
   {
     "name": "Chinese Noodle",
-    "type": "noodle & soup",
     "image": "/images/general/dishes/noodle_Soup/ChineseNoodle.webp",
-    "id": "chinesenoodle"
+    "id": "chineseNoodle",
+    "category": "main-dish",
+    "subCategory": "noodle-soup",
+    "desc": "These noodles can be served stir-fried, in soup, or cold, with meats and vegetables. From spicy Sichuan to savory soy-based broths, the options are endless. Slurpable, comforting, and full of bold flavors."
   },
   {
     "name": "Pasta",
-    "type": "noodle & soup",
     "image": "/images/general/dishes/noodle_Soup/Pasta.webp",
-    "id": "pasta"
+    "id": "pasta",
+    "category": "main-dish",
+    "subCategory": "noodle-soup",
+    "desc": "Pasta is a versatile dish made with noodles and a range of sauces like tomato, cream, or pesto. You can add meats, seafood, or veggies to suit your taste. Simple, comforting, and easy to love any day of the week."
   },
   {
     "name": "Pho",
-    "type": "noodle & soup",
     "image": "/images/general/dishes/noodle_Soup/Pho.webp",
-    "id": "pho"
+    "id": "pho",
+    "category": "main-dish",
+    "subCategory": "noodle-soup",
+    "desc": "Pho is a traditional Vietnamese noodle soup made with a flavorful beef or chicken broth, flat rice noodles, and fresh herbs. It’s often served with bean sprouts, lime, basil, and chili on the side for extra customization. Comforting, aromatic, and perfect for any time of day!"
   },
   {
     "name": "Ramen",
-    "type": "noodle & soup",
     "image": "/images/general/dishes/noodle_Soup/Ramen.webp",
-    "id": "ramen"
+    "id": "ramen",
+    "category": "main-dish",
+    "subCategory": "noodle-soup",
+    "desc": "These are popular Japanese noodle soups served in flavorful broths with meat, egg, and toppings. Ramen has thinner noodles, while Udon is thick and chewy. Warm, savory, and a hug in a bowl."
   },
   {
     "name": "Biryani",
-    "type": "rice",
     "image": "/images/general/dishes/rice/Biryani.webp",
-    "id": "biryani"
+    "id": "biryani",
+    "category": "main-dish",
+    "subCategory": "rice",
+    "desc": "Biryani is a flavorful and aromatic rice dish cooked with spices, herbs, and either meat or vegetables. It’s a traditional dish in South Asian cuisine, known for its rich flavors and vibrant colors."
   },
   {
     "name": "Com Tam",
-    "type": "rice",
     "image": "/images/general/dishes/rice/ComTam.webp",
-    "id": "comtam"
+    "id": "comTam",
+    "category": "main-dish",
+    "subCategory": "rice",
+    "desc": "Com tam is a Vietnamese dish made with broken rice and grilled meat, often served with egg and pickles. It’s a humble yet flavorful street food favorite. Filling, fragrant, and full of variety in one plate."
   },
   {
     "name": "Fried Rice",
-    "type": "rice",
     "image": "/images/general/dishes/rice/FriedRice.webp",
-    "id": "friedrice"
+    "id": "friedRice",
+    "category": "main-dish",
+    "subCategory": "rice",
+    "desc": "Fried rice is a simple yet flavorful dish made by stir-frying rice with vegetables, egg, and protein. It’s a go-to meal for using leftovers in a tasty way. Quick, customizable, and always satisfying."
   },
   {
     "name": "Sushi",
-    "type": "rice",
     "image": "/images/general/dishes/rice/Sushi.webp",
-    "id": "sushi"
+    "id": "sushi",
+    "category": "main-dish",
+    "subCategory": "rice",
+    "desc": "Sushi is a Japanese dish made with vinegared rice and toppings like raw fish, vegetables, or egg. It’s known for its fresh flavor, beautiful presentation, and bite-sized simplicity. Light, elegant, and perfect for sharing or enjoying solo."
   }
 ]

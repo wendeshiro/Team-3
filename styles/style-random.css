@@ -35,10 +35,10 @@ body {
     color: #000;
 }
 
-/* .button__reset {
+.button__back {
     background-color: #173BB5;
     color: #fff;
-} */
+}
 
 .button:hover {
     opacity: 0.7;
@@ -73,7 +73,7 @@ body {
 }
 
 .blind-box {
-    width: 180px;
+    width: 155px;
     cursor: pointer;
     transition: transform 0.3s ease;
 }

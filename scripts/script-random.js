@@ -9,13 +9,25 @@ const moreInfoBtn = document.getElementById("moreInfoBtn");
 let dishes = [];
 let selectedDish = null;
 
-fetch("/data/dishes.json")
+// Get the category from the URL
+const urlParams = new URLSearchParams(window.location.search);
+const category = urlParams.get("category") || "all"; // Default to "all"
+const subCategory = urlParams.get("subCategory"); // Get subCategory
+
+fetch("./data/dishes.json")
     .then((res) => {
         if (!res.ok) throw new Error("Failed to load dishes.json");
         return res.json();
     })
     .then((data) => {
-        dishes = data;
+        // Filter dishes based on category or subCategory
+        if (subCategory) {
+            dishes = data.filter((dish) => dish.subCategory === subCategory);
+        } else if (category !== "all") {
+            dishes = data.filter((dish) => dish.category === category);
+        } else {
+            dishes = data; // Show all dishes
+        }
         bindBlindBoxEvents();
     })
     .catch((err) => {
@@ -24,7 +36,7 @@ fetch("/data/dishes.json")
 
 // Add click event to blind boxes
 function bindBlindBoxEvents() {
-    blindBoxes.forEach((box, index) => {
+    blindBoxes.forEach((box) => {
         box.addEventListener("click", () => {
             // Get a random dish
             const randomIndex = Math.floor(Math.random() * dishes.length);
@@ -55,7 +67,16 @@ closeOverlayBtn.addEventListener("click", () => {
 // More info button
 moreInfoBtn.addEventListener("click", () => {
     if (selectedDish) {
-        // Navigate to details page with dish ID
-        window.location.href = `dish-details.html?id=${selectedDish.id}`;
+        // Navigate to the details page with the dish ID as a query parameter
+        window.location.href = `./dish-details.html?id=${selectedDish.id}`;
     }
 });
+
+// Back to previous page for "Change Category" button
+const backButton = document.querySelector(".button__back");
+if (backButton) {
+    backButton.addEventListener("click", (event) => {
+        event.preventDefault(); // Prevent default link behavior like refreshing the page
+        history.back(); // Navigate to the previous page
+    });
+}
