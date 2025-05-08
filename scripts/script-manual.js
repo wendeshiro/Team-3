@@ -45,6 +45,7 @@ function formatSubcategory(subcat) {
     : "";
 }
 
+// Displays the dish items within a dish category
 function showDishButtons(items) {
   const menuItemsDiv = document.createElement("div");
   menuItemsDiv.className = "meal-items";
@@ -67,6 +68,7 @@ function showDishButtons(items) {
 }
 
 // ======= BREAKFAST SECTION =======
+// Handles updating the breakfast information- header + buttons.
 function handleBreakfastClick() {
   if (!insertingDiv) return console.error("insertingDiv not found");
   insertingDiv.innerHTML = "";
@@ -100,6 +102,7 @@ function showBreakfastOptions(type) {
 }
 
 // ======= REGULAR MENU SECTION =======
+// Handles updating the regular menu information- header + buttons.
 function handleRegularMenuClick() {
   if (!insertingDiv) return console.error("insertingDiv not found");
   insertingDiv.innerHTML = "";
@@ -146,6 +149,7 @@ function showMainDishOptions(subcat) {
 }
 
 // ======= DATA FETCH & EVENT BINDINGS =======
+// Fetches data from the dishes json and logs if successfull or not
 fetch("/data/dishes.json")
   .then((res) => {
     if (!res.ok) throw new Error("Failed to load dishes.json");
