@@ -25,19 +25,14 @@ body {
   margin-top: 20px;
 }
 
+/* --- CONFLICTING RULES COMMENTED OUT --- */
+/*
 .meal-types {
-  display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px 30px;
   gap: 200px;
   margin-top: 20px;
-}
-
-.meal-options {
-  display: block;
-  justify-content: center;
-  align-items: center;
 }
 
 .meal-items {
@@ -47,6 +42,13 @@ body {
   padding: 10px 30px;
   gap: 200px;
   margin-top: 20px;
+}
+*/
+
+.meal-options {
+  display: block;
+  justify-content: center;
+  align-items: center;
 }
 
 .button {
@@ -97,6 +99,42 @@ body {
   color: #ffffff;
 }
 
+.button__rice {
+  font-family: "Darumadrop One", sans-serif;
+  background-color: #f09538;
+  color: #ffffff;
+}
+
+.button__dough {
+  font-family: "Darumadrop One", sans-serif;
+  background-color: #173bb5;
+  color: #ffffff;
+}
+
+.button__handheld {
+  font-family: "Darumadrop One", sans-serif;
+  background-color: #4aa152;
+  color: #ffffff;
+}
+
+.button__noodle-soup {
+  font-family: "Darumadrop One", sans-serif;
+  background-color: #bf2e29;
+  color: #ffffff;
+}
+
+.button__grilled {
+  font-family: "Darumadrop One", sans-serif;
+  background-color: #f7d663;
+  color: #000000;
+}
+
+.button__deep-fried {
+  font-family: "Darumadrop One", sans-serif;
+  background-color: #bf2e29;
+  color: #ffffff;
+}
+
 .button-container {
   display: flex;
   gap: 10px; /* Adds space between buttons */
@@ -138,4 +176,31 @@ body {
   text-align: center;
   margin-bottom: 10px;
   margin-top: 0px;
+}
+
+.mode-hint {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  font-size: 14px;
+  color: #bcaa74;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+/* --- KEEP ONLY THIS FOR GRID LAYOUT --- */
+.meal-types,
+.meal-items {
+  display: grid;
+  grid-template-columns: repeat(3, auto); /* 3 per row, auto width */
+  gap: 1rem 2rem; /* vertical and horizontal spacing */
+  justify-content: center; /* center the grid horizontally */
+  margin-bottom: 1.5rem;
+}
+
+.meal-types input[type="button"],
+.meal-items input[type="button"] {
+  padding: 10px 30px;
+  min-width: unset;
+  max-width: unset;
 }

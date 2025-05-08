@@ -1,7 +1,7 @@
-// BREAKFAST SECTION
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - BREAKFAST SECTION - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // Class selectors - FIXED SELECTORS
-const breakfastButton = document.querySelector(".button.button__bkfast"); // Added dot before button
-const insertingDiv = document.querySelector(".inserting-div"); // Added dot for class selector
+const breakfastButton = document.querySelector(".button.button__bkfast");
+const insertingDiv = document.querySelector(".inserting-div");
 
 // Add debugging to check if elements were found
 console.log("Breakfast button found:", breakfastButton);
@@ -109,9 +109,14 @@ function showBreakfastOptions(type) {
   const menuItemsDiv = document.createElement("div");
   menuItemsDiv.className = "meal-items";
 
-  // Filter the menu data by type
-  const filteredItems = dishes.filter((item) => item.type === type);
-  console.log(`Found ${filteredItems.length} ${type} items:`, filteredItems);
+  // Filter the menu data by category and subCategory
+  const filteredItems = dishes.filter(
+    (item) => item.category === "breakfast" && item.subCategory === type
+  );
+  console.log(
+    `Found ${filteredItems.length} ${type} breakfast items:`,
+    filteredItems
+  );
 
   if (filteredItems.length === 0) {
     const noItemsMessage = document.createElement("p");
@@ -120,9 +125,15 @@ function showBreakfastOptions(type) {
   } else {
     // Create and append a button for each option
     filteredItems.forEach((item) => {
-      const itemButton = createButton(item.name, `button button__${type}`);
+      const itemButton = createButton(
+        item.name,
+        `button button__${item.subCategory}`
+      );
       itemButton.addEventListener("click", () => {
-        console.log(`Selected: ${item.name}`);
+        // Route to the dish details page with the dish id as a query parameter
+        window.location.href = `./dish-details.html?id=${encodeURIComponent(
+          item.id
+        )}`;
       });
       menuItemsDiv.appendChild(itemButton);
     });
@@ -142,3 +153,130 @@ if (breakfastButton) {
 
 // Debug message to confirm script loaded
 console.log("Breakfast menu script loaded successfully");
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - REGULAR MENU SECTION - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+const regularMenuButton = document.querySelector(".button.button__regular");
+
+// Utility: Capitalize and replace hyphens/underscores with spaces
+function formatSubcategory(subcat) {
+  if (!subcat) return "";
+  return subcat
+    .replace(/[-_]/g, " ")
+    .split(" ")
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(" ");
+}
+
+// The desired subcategory order
+const mainDishSubcatOrder = [
+  "noodle-soup",
+  "rice",
+  "dough",
+  "grilled",
+  "deep-fried",
+  "handheld",
+];
+
+// Function to handle regular menu click
+function handleRegularMenuClick() {
+  console.log("Regular menu button clicked");
+
+  if (!insertingDiv) {
+    console.error("Error: insertingDiv not found in the document");
+    return;
+  }
+
+  insertingDiv.innerHTML = "";
+
+  mealOptionsContainer = document.createElement("div");
+  mealOptionsContainer.className = "meal-options";
+  insertingDiv.appendChild(mealOptionsContainer);
+
+  // Subheader
+  const subheader = createSubheader("Choose a type");
+  mealOptionsContainer.appendChild(subheader);
+
+  // Get unique subcategories for main-dish that exist in the data
+  const mainDishSubcats = [
+    ...new Set(
+      dishes
+        .filter((item) => item.category === "main-dish")
+        .map((item) => item.subCategory)
+    ),
+  ];
+
+  // Sort subcategories according to the desired order
+  const sortedSubcats = mainDishSubcatOrder.filter((subcat) =>
+    mainDishSubcats.includes(subcat)
+  );
+
+  // Create subcategory buttons
+  const subcatDiv = document.createElement("div");
+  subcatDiv.className = "meal-types";
+  sortedSubcats.forEach((subcat) => {
+    const label = formatSubcategory(subcat);
+    const subcatButton = createButton(label, `button button__${subcat}`);
+    subcatButton.addEventListener("click", () => showMainDishOptions(subcat));
+    subcatDiv.appendChild(subcatButton);
+  });
+  mealOptionsContainer.appendChild(subcatDiv);
+
+  console.log("Regular menu options setup complete");
+}
+
+// Function to show main-dish options by subcategory
+function showMainDishOptions(subcat) {
+  console.log(`Showing ${subcat} main-dish options`);
+
+  if (!mealOptionsContainer) {
+    console.error("Error: mealOptionsContainer not found");
+    return;
+  }
+
+  mealOptionsContainer.innerHTML = "";
+
+  // Subheader for the subcategory
+  const subheader = createSubheader(`${formatSubcategory(subcat)} Dishes`);
+  mealOptionsContainer.appendChild(subheader);
+
+  // Menu items container
+  const menuItemsDiv = document.createElement("div");
+  menuItemsDiv.className = "meal-items";
+
+  // Filter dishes
+  const filteredItems = dishes.filter(
+    (item) => item.category === "main-dish" && item.subCategory === subcat
+  );
+
+  if (filteredItems.length === 0) {
+    const noItemsMessage = document.createElement("p");
+    noItemsMessage.textContent = `No dishes found for ${formatSubcategory(
+      subcat
+    )}.`;
+    menuItemsDiv.appendChild(noItemsMessage);
+  } else {
+    filteredItems.forEach((item) => {
+      const itemButton = createButton(
+        item.name,
+        `button button__${item.subCategory}`
+      );
+      itemButton.addEventListener("click", () => {
+        window.location.href = `./dish-details.html?id=${encodeURIComponent(
+          item.id
+        )}`;
+      });
+      menuItemsDiv.appendChild(itemButton);
+    });
+  }
+
+  mealOptionsContainer.appendChild(menuItemsDiv);
+}
+
+// Attach event handler to the regular menu button
+if (regularMenuButton) {
+  regularMenuButton.onclick = handleRegularMenuClick;
+  console.log("Click handler attached to regular menu button");
+} else {
+  console.error("Cannot attach click handler - regular menu button not found");
+}

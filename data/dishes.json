@@ -4,7 +4,7 @@
     "image": "/images/general/dishes/breakfast/EnglishBreakfast.webp",
     "id": "englishBreakfast",
     "category": "breakfast",
-    "subCategory": "breakfast",
+    "subCategory": "savory",
     "desc": "English Breakfast is a big and hearty meal that people in England like to eat in the morning. It usually includes eggs, sausages, bacon, baked beans, grilled tomatoes, toast, and sometimes mushrooms or hash browns. It’s a filling meal that keeps you full for a long time."
   },
   {
@@ -12,7 +12,7 @@
     "image": "/images/general/dishes/breakfast/FrenchToast.webp",
     "id": "frenchToast",
     "category": "breakfast",
-    "subCategory": "breakfast",
+    "subCategory": "sweet",
     "desc": "French toast is made by soaking bread in a mix of eggs and milk, then pan-frying it to golden perfection. Often topped with syrup, fruits, or powdered sugar, it’s sweet and indulgent. A warm and cozy choice for breakfast or brunch."
   },
   {
@@ -20,7 +20,7 @@
     "image": "/images/general/dishes/breakfast/Pancake.webp",
     "id": "pancake",
     "category": "breakfast",
-    "subCategory": "breakfast",
+    "subCategory": "sweet",
     "desc": "A pancake is a flat, round cake made from a batter that typically consists of flour, eggs, milk, and a leavening agent like baking powder. The batter is poured onto a hot surface, such as a griddle or frying pan, and cooked until golden brown on both sides."
   },
   {
@@ -28,7 +28,7 @@
     "image": "/images/general/dishes/breakfast/Waffle.webp",
     "id": "waffle",
     "category": "breakfast",
-    "subCategory": "breakfast",
+    "subCategory": "sweet",
     "desc": "The batter-based flat cake known as a waffle is a Belgian culinary specialty. The basic ingredients are the same (flour, milk, eggs, and a pinch of salt), but may include yeast, caramelized sugar, leavening, and toppings."
   },
   {
